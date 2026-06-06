@@ -31,7 +31,7 @@ This project aims to cut down the time taken to update Clockify entries :D
 In the current directory:
 
 - Enter configs in [`configs.yaml`](./configs.yaml)
-- Enter task details in [`entries.yaml`](./entries.yaml) <br> **Format details**: [`entries.yaml--format.md`](./entries.yaml--format.md)
+- Enter task details in [`entries.yaml`](./entries.yaml) <br> **Learn about the format here**: [`entries.yaml--format.md`](./entries.yaml--format.md)
 - Run [`RUNME.py`](./RUNME.py) to add your tasks to Clockify
 
 THAT'S IT!!!
