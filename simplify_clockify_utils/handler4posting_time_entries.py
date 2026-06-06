@@ -52,9 +52,9 @@ class Handler4PostingTimeEntries(Handler4GettingSetupInfo):
             taskStartTime = datetime.combine(startDate, startTime)
             for task in record['tasks']:
                 # Read values
-                description:str = task.get('description', task.get('d', ''))
+                description:str = str(task.get('description', task.get('d', '')))
                 timeTaken:float = float(task.get('timeTaken', task.get('t', 1)))
-                projectName:str = task.get('projectName', task.get('p', 'FDH-NA'))
+                projectName:str = str(task.get('projectName', task.get('p', 'FDH-NA')))
                 billable:bool = bool(task.get('billable', task.get('b', False)))
 
                 # Derived values
