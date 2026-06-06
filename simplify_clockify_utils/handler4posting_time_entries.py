@@ -11,14 +11,14 @@ class Handler4PostingTimeEntries(Handler4GettingSetupInfo):
 
     #================================================
 
-    def _post_time_entry_to_workspace_id(self, time_entry:TimeEntry) -> Any:
+    def _post_time_entry(self, time_entry:TimeEntry) -> Any:
         return self.post(f'workspaces/{self.workspace.id}/time-entries', time_entry.to_dict()).json()
 
     #================================================
     
     def post_time_entry_using_dict(self, time_entry_dict:dict) -> Any:
         time_entry = TimeEntry(time_entry_dict) # intermediate validation step
-        return self._post_time_entry_to_workspace_id(time_entry)
+        return self._post_time_entry(time_entry)
     
     #================================================
     # Post time entry to workspace using user-friendly parameters
@@ -39,7 +39,7 @@ class Handler4PostingTimeEntries(Handler4GettingSetupInfo):
             'billable': billable
         }
         time_entry = TimeEntry(time_entry_dict) # intermediate validation step
-        return self._post_time_entry_to_workspace_id(time_entry)
+        return self._post_time_entry(time_entry)
 
     #================================================
     # Post multiple time entries to workspace using the object derived from entries.yaml
@@ -81,5 +81,5 @@ class Handler4PostingTimeEntries(Handler4GettingSetupInfo):
         
         responses = []
         for time_entry in time_entry_list:
-            responses.append(self._post_time_entry_to_workspace_id(time_entry))
+            responses.append(self._post_time_entry(time_entry))
         return responses
