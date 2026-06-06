@@ -93,6 +93,8 @@ https://realpython.com/api-integration-in-python/
 In the last step, click on `GENERATE NEW` to generate a new API key.
 
 ## More About `simplify_clockify_utils`
+> **Package**: [`simplify_clockify_utils`](./simplify_clockify_utils/)
+
 Contains:
 
 - [`handler4configs.py`](./simplify_clockify_utils/handler4configs.py) <br> ... to handle loading of configs in runtime
@@ -117,3 +119,5 @@ Handler4PostingTimeEntries
 ```
 
 `Handler4Configs` is separate from the above and is loaded as an attribute object within the above.
+
+**NOTE**: *Only `Handler4GettingSetupInfo` and `Handler4PostingTimeEntries` are exposed by the package.*
