@@ -74,7 +74,7 @@ class CustomField:
         return f'customField::customFieldId={self.customFieldId},sourceType={self.sourceType},value{self.value}'
 
 
-class TimeEntry: # this is mainly used for data validation
+class TimeEntry: # this class is mainly used for data validation
     _field2expected_type = {
         'billable': bool,
         'customAttributes': [CustomAttribute],

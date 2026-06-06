@@ -17,7 +17,7 @@ class Handler4PostingTimeEntries(Handler4GettingSetupInfo):
     #================================================
     
     def post_time_entry_using_dict(self, time_entry_dict:dict) -> Any:
-        time_entry = TimeEntry(time_entry_dict) # intermediate validation step
+        time_entry = TimeEntry(time_entry_dict) # serves as an intermediate validation step
         return self._post_time_entry(time_entry)
     
     #================================================
