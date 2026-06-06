@@ -32,11 +32,10 @@ E.g.:
 - startDate: '2026-06-06'
   startTime: '05:50'
   tasks:
-    - description: awesome task
+    - description: task1
       timeTaken: 2
       projectName: FDH-NA
-      billable: false
-    - description: amazing task
+      billable: task2
       timeTaken: 1
       projectName: FDH-PH
       billable: false
@@ -45,16 +44,37 @@ E.g.:
 - startDate: '2026-06-07'
   startTime: '06:43'
   tasks:
-    - description: awesome task
-      timeTaken: 2
-      projectName: FDH-NA
-      billable: false
-    - description: dumb task
+    - description: task3
       timeTaken: 5
       projectName: FDH-NA
       billable: false
-    - description: super task
+    - description: task4
       timeTaken: 1.2
       projectName: FDH-PH
       billable: false
+```
+
+---
+
+**Acceptable abbreviations**:
+
+The format also accepts the following abbreviations:
+
+| Original | Abbreviated |
+| --- | --- |
+| `description` | `d` |
+| `timeTaken` | `t` |
+| `projectName` | `p` |
+| `billable` | `b` |
+
+For clarity, this is how these fields would be arranged in YAML:
+
+```yaml
+- startDate: ... # format: YYYY-mm-dd
+  startTime: ... # format: HH:mm (24 hour clock)
+  tasks:
+    - d: ... # can be left empty as well
+      t: ... # only in hours; decimals are acceptable; defaults to 1 hour
+      p: ... # defaults to FDH-PH
+      b: ... # defaults to false
 ```

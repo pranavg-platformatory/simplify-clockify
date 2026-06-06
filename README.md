@@ -16,7 +16,7 @@
   - [API Integration with Python](#api-integration-with-python)
 - [Notes](#notes)
   - [How to Create API Key for Auth](#how-to-create-api-key-for-auth)
-  - [More About `simplify_clockify_utils`](#more-about-simplify_clockify_utils)
+  - [More about `simplify_clockify_utils`](#more-about-simplify_clockify_utils)
 
 ---
 
@@ -92,7 +92,7 @@ https://realpython.com/api-integration-in-python/
 
 In the last step, click on `GENERATE NEW` to generate a new API key.
 
-## More About `simplify_clockify_utils`
+## More about `simplify_clockify_utils`
 > **Package**: [`simplify_clockify_utils`](./simplify_clockify_utils/)
 
 Contains:

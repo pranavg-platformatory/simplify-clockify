@@ -6,6 +6,12 @@
 #       timeTaken: ...   # only in hours; fractions are acceptable; defaults to 1 hour
 #       projectName: ... # defaults to FDH-PH
 #       billable: ...    # defaults to false
+# 
+# NOTE: The following abbreviations are acceptable:
+# d = description
+# t = timeTaken
+# p = projectName
+# b = billable
 
 - startDate: '2026-06-06'
   startTime: '05:50'
