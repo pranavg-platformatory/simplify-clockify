@@ -1,0 +1,8 @@
+auth:
+  api_key_name: enter-your-api-key-name-here
+  api_key_value: enter-your-api-key-value-here
+access:
+  api_base_url: https://api.clockify.me/api/v1/
+workspace:
+  workspace_id: enter-your-workspace-id-here # if you give workspace_name, you can leave this null
+  workspace_name: enter-your-workspace-name-here # if you give workspace_id, you can leave this null

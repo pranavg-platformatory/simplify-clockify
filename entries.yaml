@@ -1,0 +1,48 @@
+# Format:
+# - startDate: ... # format: YYYY-mm-dd
+#   startTime: ... # format: HH:mm (24 hour clock)
+#   tasks:
+#     - description: ... # can be left empty as well
+#       timeTaken: ...   # only in hours; fractions are acceptable; defaults to 1 hour
+#       projectName: ... # defaults to FDH-PH
+#       billable: ...    # defaults to false
+
+- startDate: '2026-06-06'
+  startTime: '05:50'
+  tasks:
+    - description: awesome task
+      timeTaken: 2
+      projectName: FDH-NA
+      billable: false
+    - description: amazing task
+      timeTaken: 1
+      projectName: FDH-PH
+      billable: false
+    - description: dumb task
+      timeTaken: 3
+      projectName: FDH-NA
+      billable: false
+    - description: super task
+      timeTaken: 2.5
+      projectName: FDH-PH
+      billable: false
+
+- startDate: '2026-06-07'
+  startTime: '06:43'
+  tasks:
+    - description: awesome task
+      timeTaken: 2
+      projectName: FDH-NA
+      billable: false
+    - description: amazing task
+      timeTaken: 2
+      projectName: FDH-PH
+      billable: false
+    - description: dumb task
+      timeTaken: 5
+      projectName: FDH-NA
+      billable: false
+    - description: super task
+      timeTaken: 1.2
+      projectName: FDH-PH
+      billable: false
