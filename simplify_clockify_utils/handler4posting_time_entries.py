@@ -1,4 +1,4 @@
-from.handler4getting_setup_info import Handler4GettingSetupInfo
+from .handler4getting_setup_info import Handler4GettingSetupInfo
 from .models import TimeEntry
 from typing import Any
 from datetime import datetime, timedelta
